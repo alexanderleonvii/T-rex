@@ -1,1 +1,31 @@
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Bienvenida Para Mobil */
+
+.Nav-Desk{
+  display: none;
+}
+
+.Nav-Mobile{
+  display: flex;
+  color: red;
+}
+
+@media only screen and (min-width: 600px){
+  
+  nav.Nav-Mobile{
+    display: none;
+  }
+  nav.Nav-Desk{
+    display: flex;
+    color: blue;
+  }
+
+  
+
+}
