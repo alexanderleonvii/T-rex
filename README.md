@@ -1,2 +1,2 @@
 # T-rex
-Here you will lear the evollution of the T-Rex
+Here you will learn the evollution of the T-Rex
