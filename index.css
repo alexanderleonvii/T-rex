@@ -4,28 +4,122 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+:root{
+  --minImgWidth: 200px;
+}
 /* Bienvenida Para Mobil */
 
-.Nav-Desk{
+.Nav-clux{
   display: none;
 }
 
-.Nav-Mobile{
+.Nav-rex{
+  display: none;
+}
+
+.Nav-chicken{
   display: flex;
   color: red;
+  height: 64px;
+  width: auto;
+  background-color: chartreuse;
+}
+
+.h1-chicken{
+  width:100%;
+}
+
+nav.Nav-chicken img{
+  width: 24px;
+  height: 24px;
+}
+
+.container{
+  background-color: red;  
+}
+
+.img-chicken{
+  grid-area:chki;
+  min-width: var(--minImgWidth);
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+.txt-chicken{
+  grid-area:chkt;
+  display: grid;
+  align-content: space-around;
+}
+.img-clux{
+  grid-area:clxi;
+  min-width: var(--minImgWidth);
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+.txt-clux{
+  grid-area:clxt;
+  display: grid;
+  align-content: space-around;
+}
+.img-rex{
+  grid-area:rexi;
+  min-width: var(--minImgWidth);
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+.txt-rex{
+  grid-area:rext;
+  display: grid;
+  align-content: space-around;
+}
+.all{
+  min-width: var(--minImgWidth);
+  width: 100%;
+  display: none;
+}
+body section div img{
+  width: 100%;
 }
 
 @media only screen and (min-width: 600px){
-  
-  nav.Nav-Mobile{
+  nav.Nav-rex{
     display: none;
   }
-  nav.Nav-Desk{
+
+  nav.Nav-chicken{
+    display: none;
+  }
+
+  nav.Nav-clux{
     display: flex;
     color: blue;
   }
 
-  
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: yellow;  
+    grid-template-areas:
+    'chkt chki'
+    'clxt clxi'
+    'rext rexi';
+  }
+}
 
+@media only screen and (min-width: 1024px){
+  nav.Nav-clux{
+    display: none;
+  }
+
+  nav.Nav-chicken{
+    display: none;
+  }
+
+  nav.Nav-rex{
+    display: flex;
+    color: green;
+  }
 }
