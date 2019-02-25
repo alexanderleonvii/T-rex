@@ -75,6 +75,7 @@ nav.Nav-chicken img{
   align-content: space-around;
 }
 .all{
+  grid-area: all;
   min-width: var(--minImgWidth);
   width: 100%;
   display: none;
@@ -101,7 +102,8 @@ body section div img{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: yellow;  
+    background-color: yellow;
+    grid-gap: 10px; 
     grid-template-areas:
     'chkt chki'
     'clxt clxi'
@@ -121,5 +123,21 @@ body section div img{
   nav.Nav-rex{
     display: flex;
     color: green;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: cornflowerblue;
+    grid-gap: 10px;
+    grid-template-areas:
+    'rext clxt chkt'
+    'rexi clxi chki'
+    'all  all  all ';
+  }
+
+  .all{
+    display: grid;
   }
 }
