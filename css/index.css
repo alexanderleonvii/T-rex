@@ -4,7 +4,7 @@
 }
 
 body {
-  background-color: #888;
+  background-color: #555;
 }
 
 header.head-mobile {
@@ -60,6 +60,55 @@ nav.Nav-clux div.btn a {
 
 nav.Nav-rex {
   display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main h1 {
+  margin-top: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 26px;
+  width: 90%;
+  background-color: #d83030;
+  text-align: center;
+  font-weight: 200;
+  padding: 4px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+}
+main section.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 80%;
+  height: fit-content;
+  margin: 24px 0;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 25px 25px 0 0;
+}
+main section.container div.img {
+  display: flex;
+  justify-content: center;
+}
+main section.container div.img img {
+  width: 80%;
+  height: 80%;
+  border-radius: 300px;
+}
+main section.container div.text {
+  background-color: #e4d619;
+  padding: 16px;
+}
+main section.container div.text h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+main section.container div.text p {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (min-width: 769px) {
