@@ -3,6 +3,10 @@
   padding: 0px;
 }
 
+:root{
+  --minImgWidth: 200px;
+}
+
 body {
   background-color: #888;
 }
@@ -62,7 +66,13 @@ nav.Nav-rex {
   display: none;
 }
 
+.all{
+  display: none;
+}
+
 @media only screen and (min-width: 769px) {
+
+
   nav.Nav-clux {
     display: none;
   }
@@ -70,6 +80,68 @@ nav.Nav-rex {
   header.head-mobile {
     display: none;
   }
+  .img-chicken{
+    grid-area:chki;
+    min-width: var(--minImgWidth);
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .txt-chicken{
+    grid-area:chkt;
+    display: grid;
+    align-content: space-around;
+  }
+  .img-clux{
+    grid-area:clxi;
+    min-width: var(--minImgWidth);
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .txt-clux{
+    grid-area:clxt;
+    display: grid;
+    align-content: space-around;
+  }
+  .img-rex{
+    grid-area:rexi;
+    min-width: var(--minImgWidth);
+    width: 100%;
+    display: grid;
+    align-items: center;
+  }
+  .txt-rex{
+    grid-area:rext;
+    display: grid;
+    align-content: space-around;
+  }
+  .all{
+    grid-area: all;
+    min-width: var(--minImgWidth);
+    width: 100%;
+    display: none;
+  }
+  body section div img{
+    width: 100%;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: cornflowerblue;
+    grid-gap: 10px;
+    grid-template-areas:
+    'rext clxt chkt'
+    'rexi clxi chki'
+    'all  all  all ';
+  }
+
+  .all{
+    display: grid;
+  }
+
 }
 
 /*# sourceMappingURL=index.css.map */
